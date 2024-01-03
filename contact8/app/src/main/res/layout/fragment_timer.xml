@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.TimerFragment"
+    android:id="@+id/fragment_container_timer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/timeCountSettingLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/hourET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="00"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text=":"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/minuteET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="00"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text=":"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/secondET"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="00"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeCountLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/hourTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text=":"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/minuteTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text=":"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/resetBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/secondTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/finishTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정지"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="100dp"
+            android:text="삭제"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
