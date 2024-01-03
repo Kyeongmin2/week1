@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container_alarm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.AlarmFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        tools:context=".ui.notifications.NotificationsFragment">
+
+
+        <Button
+            android:id="@+id/showAlarmsButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:padding="3dp"
+            android:drawableLeft="@drawable/baseline_format_list_bulleted_24"
+            android:textSize="15sp"
+            android:background="@null"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/selectTime"
+            android:text="."
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#746A6A"
+            android:textSize="40dp"
+            android:layout_marginTop="150dp"/>
+
+
+
+        <!-- 알람 목록 버튼을 추가 -->
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/setAlarm"
+            android:text="Set"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            />
+
+
+    </LinearLayout>
+</FrameLayout>

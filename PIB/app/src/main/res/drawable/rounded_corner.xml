@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- 흰색 배경 -->
+    <corners android:radius="20dp" /> <!-- 조절 가능한 반지름 값 -->
+</shape>
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:src="@drawable/person"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Person Icon"
+        app:tint="#746A6A" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:background="@drawable/editrectangle"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/font"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:background="@drawable/editrectangle"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/font"/>
+
+    <EditText
+        android:id="@+id/Memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Memo"
+        android:background="@drawable/editrectangle"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/font"/>
+</LinearLayout>
