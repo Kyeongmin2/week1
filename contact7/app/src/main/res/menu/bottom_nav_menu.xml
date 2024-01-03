@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/contactbook"
+        android:elevation="4dp"
+        android:title="Contacts" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/gallery"
+        android:elevation="4dp"
+        android:title="Photos" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/alarm"
+        android:elevation="4dp"
+        android:title="Clock" />
+
+</menu>

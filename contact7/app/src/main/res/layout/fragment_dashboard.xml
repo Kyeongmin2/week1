@@ -1,0 +1,49 @@
+<!-- fragment_home.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pink">
+
+    <!-- "MY ALBUM" 텍스트를 추가 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myAlbumText"
+        android:text="My Album"
+        android:textSize="18sp"
+        android:textColor="@color/edit_icon_color"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE0E0"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:layout_marginTop="42dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/plus"
+        app:borderWidth="0dp" />
+
+
+
+</RelativeLayout>
